@@ -146,3 +146,15 @@ Next improvements planned for this pipeline:
 Dineshtarun G
 
 DevOps | Cloud | 
+
+For using 
+
+# Pull jenkins
+docker pull tarun08code/jenkins:lts
+
+# Running container with volume attached 
+docker run -d \
+  -p 8081:8080 \
+  -v jenkins_home:/var/jenkins_home \
+  --name jenkins \
+  tarun08code/jenkins:lts
